@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+@using Logic
+
+<h2>Submit Your Entry</h2>
+
+@using Logic
+
+@model Submission
+
+<form asp-action="Add">
+    <div>
+        <div>
+            <label asp-for="FirstName"></label>
+        </div>
+        <div>
+            <input required asp-for="FirstName" />
+        </div>
+    </div>
+    <div>
+        <div>
+            <label asp-for="SurName"></label>
+        </div>
+        <div>
+            <input required asp-for="SurName" />
+        </div>
+    </div>
+    <div>
+        <div>
+            <label asp-for="EmailAddress"></label>
+        </div>
+        <div>
+            <input required type="email" asp-for="EmailAddress" />
+        </div>
+    </div>
+    <div>
+        <div>
+            <label asp-for="Phonenumber"></label>
+        </div>
+        <div>
+            <input required asp-for="Phonenumber" />
+        </div>
+    </div>
+    <div>
+        <div>
+            <label asp-for="DateOfBirth"></label>
+        </div>
+        <div>
+            <input required type="date" asp-for="DateOfBirth" />
+        </div>
+    </div>
+    <div>
+        <div>
+            <label asp-for="SerialNumber"></label>
+        </div>
+        <div>
+            <input min="1" max="100" required asp-for="SerialNumber" />
+        </div>
+    </div>
+    <div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</form>

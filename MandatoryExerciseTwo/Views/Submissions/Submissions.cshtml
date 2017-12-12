@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Submissions";
+}
+
+@using Logic
+@model IEnumerable<Submission>
+
+<h2>Submissions</h2>
+
+<div>
+    <div>
+        <table>
+            <tr>
+                <th>Surname</th>
+                <th>Firstname</th>
+                <th>Email Address</th>
+                <th>Phonenumber</th>
+                <th>Date of birth</th>
+                <th>Serialnumber</th>
+            </tr>
+            @Html.DisplayForModel();
+        </table>
+    </div>
+</div>
